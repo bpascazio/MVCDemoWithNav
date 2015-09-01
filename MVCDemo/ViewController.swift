@@ -20,12 +20,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let vc:AnimalDetailViewController = segue.destinationViewController as! AnimalDetailViewController
+        
+        let topic = sender as! String
+        
+        vc.animalTopic = topic
+        
+    }
+    
     //MARK: UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        performSegueWithIdentifier("animalDetailSegue", sender: self)
+        performSegueWithIdentifier("animalDetailSegue", sender: items[indexPath.row].topic)
     }
 
     //MARK: UITableViewDataSource

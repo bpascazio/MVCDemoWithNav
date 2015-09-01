@@ -12,10 +12,18 @@ class AnimalDetailViewController: UIViewController {
 
     @IBOutlet weak var animalNameLabel: UILabel!
     
+    var animalTopic:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let animalTopic_ = animalTopic {
+            animalNameLabel.text = animalTopic_
+        }
     }
 
     override func didReceiveMemoryWarning() {
