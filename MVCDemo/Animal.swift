@@ -17,8 +17,9 @@ class Animal: NSObject, Discussable {
     
     let name: String
     
-    init(name: String) {
+    init(name: String, image:UIImage?) {
         self.name = name
+        self.image = image
         super.init()
         searchForInterestingFact()
     }

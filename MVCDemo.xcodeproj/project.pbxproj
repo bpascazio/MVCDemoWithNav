@@ -16,6 +16,7 @@
 		88E6467E1B4438FE0010EE73 /* DiscussableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6467D1B4438FE0010EE73 /* DiscussableCell.swift */; };
 		88E646801B443A870010EE73 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6467F1B443A870010EE73 /* Animal.swift */; };
 		C1F19B8E1B9528FE00A3ED43 /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F19B8D1B9528FE00A3ED43 /* AnimalDetailViewController.swift */; };
+		C1F19B901B95359700A3ED43 /* dino.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F19B8F1B95359700A3ED43 /* dino.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		88E6467D1B4438FE0010EE73 /* DiscussableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussableCell.swift; sourceTree = "<group>"; };
 		88E6467F1B443A870010EE73 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C1F19B8D1B9528FE00A3ED43 /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
+		C1F19B8F1B95359700A3ED43 /* dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dino.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		88E646811B443A8B0010EE73 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C1F19B8F1B95359700A3ED43 /* dino.png */,
 				88E6467F1B443A870010EE73 /* Animal.swift */,
 			);
 			name = Models;
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E646631B44355C0010EE73 /* Main.storyboard in Resources */,
+				C1F19B901B95359700A3ED43 /* dino.png in Resources */,
 				88E646681B44355C0010EE73 /* LaunchScreen.xib in Resources */,
 				88E646651B44355C0010EE73 /* Images.xcassets in Resources */,
 			);
