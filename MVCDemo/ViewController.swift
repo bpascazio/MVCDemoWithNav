@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageDefault:UIImage? = UIImage(contentsOfFile: "dino.png")
+        let imageDefault:UIImage? = UIImage(contentsOfFile: "dog.png")
         items = [
             Animal(name: "Dog", image:imageDefault),
             Animal(name: "Cat", image:imageDefault),
