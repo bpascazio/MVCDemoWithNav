@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageDefault:UIImage? = UIImage(contentsOfFile: "dog.png")
+        let imageDefault:UIImage? = UIImage(named: "Animal")
         items = [
             Animal(name: "Dog", image:imageDefault),
             Animal(name: "Cat", image:imageDefault),
@@ -30,9 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let vc:AnimalDetailViewController = segue.destinationViewController as! AnimalDetailViewController
         
-        let topic = sender as! String
+        let topic = sender as! Discussable
         
-        vc.animalTopic = topic
+        vc.animalTopic = topic.topic
         
     }
     
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        performSegueWithIdentifier("animalDetailSegue", sender: items[indexPath.row].topic)
+        performSegueWithIdentifier("animalDetailSegue", sender: items[indexPath.row] as? AnyObject)
     }
 
     //MARK: UITableViewDataSource

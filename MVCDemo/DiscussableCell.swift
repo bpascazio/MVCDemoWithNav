@@ -18,7 +18,7 @@ class DiscussableCell: UITableViewCell {
         
     @IBOutlet weak var theImage: UIImageView!
     func configureWithItem(item: Discussable) {
- //       theImage.image = item.image
+        theImage.image = item.image
         textLabel?.text = item.topic
         detailTextLabel?.text = item.interestingFact
     }
