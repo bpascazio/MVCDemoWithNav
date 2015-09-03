@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let topic = sender as! Discussable
         
         vc.animalTopic = topic.topic
+        vc.animalUIImage = topic.image
         
     }
     

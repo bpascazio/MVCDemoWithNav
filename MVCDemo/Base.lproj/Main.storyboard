@@ -91,20 +91,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyq-m5-H5Y">
-                                <rect key="frame" x="279" y="85" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyq-m5-H5Y">
+                                <rect key="frame" x="279" y="129" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JyB-cY-qiS">
+                                <rect key="frame" x="180" y="245" width="239" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="8de-Oh-033"/>
+                                    <constraint firstAttribute="width" constant="239" id="J0K-z7-zcs"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JyB-cY-qiS" secondAttribute="centerX" id="0h7-aD-Osg"/>
                             <constraint firstItem="Uyq-m5-H5Y" firstAttribute="top" secondItem="Fsd-7K-Vc3" secondAttribute="bottom" constant="65" id="9Qe-bY-JT6"/>
                             <constraint firstAttribute="centerX" secondItem="Uyq-m5-H5Y" secondAttribute="centerX" id="CwS-sg-6co"/>
+                            <constraint firstItem="JyB-cY-qiS" firstAttribute="top" secondItem="Uyq-m5-H5Y" secondAttribute="bottom" constant="95" id="kEX-7d-A7j"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animalImage" destination="JyB-cY-qiS" id="JSp-Gx-kmf"/>
                         <outlet property="animalNameLabel" destination="Uyq-m5-H5Y" id="2Ya-EG-byx"/>
                     </connections>
                 </viewController>

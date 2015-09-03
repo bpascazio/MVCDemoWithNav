@@ -12,7 +12,10 @@ class AnimalDetailViewController: UIViewController {
 
     @IBOutlet weak var animalNameLabel: UILabel!
     
+    @IBOutlet weak var animalImage: UIImageView!  ////
+    
     var animalTopic:String?
+    var animalUIImage:UIImage? //////
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,9 @@ class AnimalDetailViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         if let animalTopic_ = animalTopic {
             animalNameLabel.text = animalTopic_
+        }
+        if let animalUIImage_ = animalUIImage {
+            animalImage.image = animalUIImage_
         }
     }
 
