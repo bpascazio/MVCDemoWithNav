@@ -15,12 +15,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageDefault:UIImage? = UIImage(named: "Animal")
+        let imageUnknown:UIImage? = UIImage(named: "Unknown")
+        let imageDog:UIImage? = UIImage(named: "Dog")
         items = [
-            Animal(name: "Dog", image:imageDefault),
-            Animal(name: "Cat", image:imageDefault),
-            Animal(name: "Fish", image:imageDefault),
-            Animal(name: "Rabbit", image:imageDefault) ]
+            Animal(name: "Dog", image:imageDog),
+            Animal(name: "Cat", image:imageUnknown),
+            Animal(name: "Fish", image:imageUnknown),
+            Animal(name: "Rabbit", image:imageUnknown) ]
         
         tableView.delegate = self
         
